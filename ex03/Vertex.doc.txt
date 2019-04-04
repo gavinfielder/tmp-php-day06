@@ -1,0 +1,21 @@
+
+<- Vertex ---------------------------------------------------------------------
+The Vertex class represents A 3-dimensional point in space
+
+An instance can be constructed with an array with the following keys:
+numbers 'x', 'y', 'z', and optionally, 'w', and 'color' of class Color.
+
+The following accessors are provided:
+ - getX()
+ - getY()
+ - getZ()
+ - getW()
+ - getColor()
+
+The following manipulators are provided:
+ - setX($x)
+ - setY($y)
+ - setZ($z)
+ - setW($w)
+ - setColor($color)
+--------------------------------------------------------------------- Vertex ->

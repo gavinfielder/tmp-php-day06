@@ -1,0 +1,25 @@
+<- Vector ----------------------------------------------------------------------
+Represents a three-dimensional vector in space.
+
+It is constructed with an array with the index 'dest' and a value type of Vertex
+Optionally, Vertex 'orig' can also be supplied to construct a relative vector.
+
+The following accessors are provided:
+ - getX()
+ - getY()
+ - getZ()
+ - getW()
+
+The following informators are provided:
+ - magnitude()
+
+The following methods are provided:
+ - normalize()
+ - opposite();
+ - add(Vector $v)
+ - sub(Vector $v)
+ - dotProduct(Vector $v)
+ - scalarProduct($k)
+ - crossProduct(Vector $v)
+ - cos(Vector $v)
+---------------------------------------------------------------------- Vector ->

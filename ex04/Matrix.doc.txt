@@ -1,0 +1,32 @@
+
+<- Vertex ---------------------------------------------------------------------
+The Matrix class represents a 4x4 matrix.
+
+An instance can be constructed with an array with a key 'preset' set to:
+ - Matrix::ZERO         null matrix
+ - Matrix::IDENTITY     identity matrix
+ - Matrix::SCALE        scale matrix, requires number 'scale'
+ - Matrix::RX           x-rotation matrix, requires number 'angle'
+ - Matrix::RY           y-rotation matrix, requires number 'angle'
+ - Matrix::RZ           z-rotation matrix, requires number 'angle'
+ - Matrix::TRANSLATION  translation matrix, requires Vector 'vtc'
+ - Matrix::PROJECTION   projection matrix, requires numbers
+                            'fov', 'ratio', 'near', 'far'
+
+The following accessors are provided:
+ - m(i, j)      Accesses row i, column j
+ - get_type()   Returns raw type id
+ - typeStr()    Returns text representation of type
+ - getScale()   Returns scale if SCALE preset, else 0
+ - getAngle()   Returns angle if RX,RY,Rz presets, else 0
+ - getVtc()     Returns vtc Vector if TRANSLATION preset, else null
+ - getFov()     Returns fov if PROJECTION preset, else 0
+ - getRatio()   Returns ratio if PROJECTION preset, else 0
+ - getFar()     Returns far if PROJECTION preset, else 0
+ - getNear()    Returns near if PROJECTION preset, else 0
+
+The following functions are provided:
+ - mult(Matrix $n)    Returns matrix product of self and n
+ - transformVertex(Vertex $v)   Returns product of self and v
+
+--------------------------------------------------------------------- Vertex ->
